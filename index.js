@@ -7,5 +7,6 @@ console.log(
   "This console.log() fires when index.js loads - before DOMContentLoaded is triggered"
 );
 document.addEventListener("DOMContentLoaded", function(e){
-  document.getElementById(text).textContent = 'This is really cool!'
+  let text =document.getElementById(text)
+  text.textContent = 'This is really cool!'
 })
